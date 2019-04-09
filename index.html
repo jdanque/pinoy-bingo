@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Pinoy Bingo</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"
+    ></script>
+    <script type="text/javascript" src="js/lodash.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bingo.js"></script>
+  </head>
+  <body>
+    <div class="title container">
+      <div class="row">
+        <div class="col page-header text-center">
+          <h1 class="display-4">PINOY BINGO</h1>
+        </div>
+      </div>
+    </div>
+    <div class="selection bingo-container container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="quicklink-group">
+            <button class="quicklink caller" data-value="caller">
+              <span class="ql_caption">
+                <span class="outer">
+                  <span class="inner">
+                    <h2>Caller</h2>
+                  </span>
+                </span>
+              </span>
+              <span class="ql_top"></span>
+              <span class="ql_bottom"></span>
+            </button>
+            <div class="quicklink or"></div>
+            <button class="quicklink player" data-value="player">
+              <span class="ql_caption">
+                <span class="outer">
+                  <span class="inner">
+                    <h2>Player</h2>
+                  </span>
+                </span>
+              </span>
+              <span class="ql_top"></span>
+              <span class="ql_bottom"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="caller bingo-container container d-none">
+      <div class="row">
+        <div class="col text-left">
+          <a
+            class="btn btn-lg btn-primary"
+            href="#"
+            onClick="window.location.reload(true);"
+          >
+            Back
+          </a>
+        </div>
+        <div class="col text-right">
+          <div class="btn btn-lg btn-success">
+            Draw
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="player bingo-container container d-none">
+      <div class="row">
+        <div class="col text-left">
+          <a
+            class="btn btn-lg btn-primary"
+            href="#"
+            onClick="window.location.reload(true);"
+          >
+            Back
+          </a>
+        </div>
+        <div class="col text-right">
+          <div class="btn btn-lg btn-success btn-addcard">
+            + Add Card
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
