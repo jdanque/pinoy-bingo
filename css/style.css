@@ -1,0 +1,126 @@
+body {
+  font-family: monospace;
+  padding: 1em;
+}
+
+.quicklink-group {
+  position: relative;
+}
+
+.quicklink.or {
+  z-index: 3;
+  position: relative;
+  display: inline;
+}
+.quicklink.or:before {
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+  content: "or";
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  margin-top: -3rem;
+  margin-left: -3em;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4.5em;
+  color: #868e96;
+}
+
+button.quicklink.caller {
+  background: #17a2b8;
+}
+button.quicklink.caller .ql_top {
+  border-bottom-color: #17a2b8;
+}
+button.quicklink.caller .ql_bottom {
+  border-top-color: #17a2b8;
+}
+button.quicklink.player {
+  background: #28a745;
+}
+button.quicklink.player .ql_top {
+  border-bottom-color: #28a745;
+}
+button.quicklink.player .ql_bottom {
+  border-top-color: #28a745;
+}
+
+button.quicklink {
+  cursor: pointer;
+  display: inline-block;
+  width: 7em;
+  height: 4em;
+  position: relative;
+  margin: 3em 0;
+  border: none;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+button.quicklink:hover {
+  opacity: 1;
+}
+
+button.quicklink:hover .ql_caption h2 {
+  color: #fff;
+  font-weight: bold;
+}
+
+button.quicklink .ql_caption {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.outer {
+  display: table;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-spacing: 0px;
+  padding: 0px;
+}
+.inner {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-spacing: 0px;
+  padding: 0px;
+}
+button.quicklink .ql_caption h2 {
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+  line-height: 1.46em;
+  color: #000;
+}
+
+.ql_top {
+  bottom: 4em;
+  border-bottom: 2em solid #ccc;
+}
+.ql_bottom {
+  top: 4em;
+  border-top: 2em solid #ccc;
+}
+.ql_top,
+.ql_bottom {
+  position: absolute;
+  left: 0px;
+  width: 0px;
+  border-left: 3.5em solid transparent;
+  border-right: 3.5em solid transparent;
+}
+
+button.quicklink {
+  font-size: 36px;
+  font-weight: 500;
+  text-decoration: none;
+}
