@@ -124,3 +124,387 @@ button.quicklink {
   font-weight: 500;
   text-decoration: none;
 }
+
+.player-card-deck {
+  margin-top: 1em;
+}
+.bingo-card {
+  padding: 1em;
+  position: relative;
+}
+
+.bingo-card__close {
+  padding: 0.5em;
+  zoom: 1.2;
+  border-radius: 50%;
+  background-color: #ec5959;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bingo-card__close:hover {
+  border: 0;
+  border-top: 2px solid transparent;
+}
+
+.bingo-card.bingo-card--black table {
+  background-color: #383636;
+  color: #383636;
+}
+.bingo-card.bingo-card--black table > tbody td {
+  border-color: #383636;
+}
+.bingo-card.bingo-card--red table {
+  background-color: #b22326;
+  color: #b22326;
+}
+.bingo-card.bingo-card--red table > tbody td {
+  border-color: #b22326;
+}
+.bingo-card.bingo-card--blue table {
+  background-color: #10a1c9;
+  color: #10a1c9;
+}
+.bingo-card.bingo-card--blue table > tbody td {
+  border-color: #10a1c9;
+}
+.bingo-card.bingo-card--violet table {
+  background-color: #672d6d;
+  color: #672d6d;
+}
+.bingo-card.bingo-card--violet table > tbody td {
+  border-color: #672d6d;
+}
+.bingo-card.bingo-card--orange table {
+  background-color: #df8b31;
+  color: #df8b31;
+}
+.bingo-card.bingo-card--orange table > tbody td {
+  border-color: #df8b31;
+}
+.bingo-card.bingo-card--yellow table {
+  background-color: #ceba02;
+  color: #ceba02;
+}
+.bingo-card.bingo-card--yellow table > tbody td {
+  border-color: #ceba02;
+}
+.bingo-card.bingo-card--green table {
+  background-color: #31680b;
+  color: #31680b;
+}
+.bingo-card.bingo-card--green table > tbody td {
+  border-color: #31680b;
+}
+
+.bingo-card table {
+  background-color: #f4cb7a;
+  color: #f4cb7a;
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: monospace;
+  border-collapse: separate;
+  border-radius: 1em;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  padding: 1em;
+}
+
+.bingo-card table > thead {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.bingo-card table > thead th {
+  color: inherit;
+}
+
+.bingo-card table > tbody {
+  font-family: serif;
+}
+
+.bingo-card table > tbody td {
+  border: 0.2em solid #f4cb7a;
+  padding: 0.3em;
+  color: inherit;
+  background-color: #fff;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  max-height: 1em;
+  max-width: 1em;
+  min-height: 1em;
+  min-width: 1em;
+}
+
+.bingo-card__cell--marked {
+  background: transparent !important;
+  color: #fff !important;
+}
+
+.cube__wrapper {
+  perspective: 50em;
+  perspective-origin: 50% 5em;
+  display: block;
+  height: 24em;
+}
+
+.cube {
+  position: relative;
+  width: 20em;
+  transform-style: preserve-3d;
+}
+
+.cube > div[class^="cube-"] {
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  border: 0.3em double #6c757d;
+}
+
+.cube-back {
+  transform: translateZ(-10em) rotateY(180deg);
+  background: #969696;
+}
+.cube-right {
+  transform: rotateY(-270deg) translateX(10em);
+  transform-origin: top right;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    #ffffff 0%,
+    #969696 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #ffffff 0%,
+    #969696 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #969696 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.cube-left {
+  transform: rotateY(270deg) translateX(-10em);
+  transform-origin: center left;
+  background: #969696; /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    #969696 0%,
+    #ffffff 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    #969696 0%,
+    #ffffff 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #969696 0%,
+    #ffffff 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.cube-top {
+  transform: rotateX(-90deg) translateY(-10em);
+  transform-origin: top center;
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #969696 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #ffffff 0%,
+    #969696 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #969696 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.cube-bottom {
+  transform: rotateX(90deg) translateY(10em);
+  transform-origin: bottom center;
+  background: #969696; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #969696 0%,
+    #ffffff 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #969696 0%,
+    #ffffff 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #969696 0%,
+    #ffffff 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.cube-front {
+  transform: translateZ(10em);
+}
+
+@keyframes ballDrawn {
+  0% {
+    background: radial-gradient(
+      circle at 50% 40%,
+      #fcfcfc,
+      #ff0000 66%,
+      transparent 100%
+    );
+  }
+  100% {
+    background: radial-gradient(
+      circle at 50% 40%,
+      #fcfcfc,
+      #dedede 66%,
+      transparent 100%
+    );
+  }
+}
+
+@keyframes numberReveal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ballRoll {
+  0% {
+    opacity: 1;
+    bottom: 100%;
+    transform: rotateX(0) scale(1);
+  }
+  20% {
+    opacity: 1;
+    bottom: 0;
+    transform: rotateX(-90deg) scale(0.4);
+  }
+  21% {
+    opacity: 0;
+    bottom: 100%;
+    transform: rotateX(90deg) scale(0.3);
+  }
+}
+
+.ball-stage {
+  position: relative;
+  width: 94%;
+  height: 94%;
+  margin: auto;
+}
+
+.bigball {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 50% 40%,
+    #fcfcfc,
+    #dedede 66%,
+    #9b5050 100%
+  );
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ball-wrapper {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  bottom: 0;
+}
+
+.ball-number {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 3em;
+  font-size: 5em;
+  color: #b22326;
+  animation: ballRoll 0.8s;
+  animation-iteration-count: 3;
+  animation-timing-function: cubic-bezier(0.525, 0.915, 0.405, 1);
+}
+
+.ball-number:after {
+  content: attr(data-number);
+  position: absolute;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: numberReveal 0.1s 1.7s reverse forwards;
+}
+
+.ball-number:before {
+  content: "?";
+  position: absolute;
+  transform: translateX(-50%);
+  animation: numberReveal 0.1s 1.7s forwards;
+}
+
+.ball-wrapper:after {
+  background: radial-gradient(50% 50%, #000 0%, transparent 100%);
+  height: 15%;
+  width: 90%;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  display: block;
+  margin-top: 85%;
+}
+
+.caller-balls > table > tbody td {
+  padding: 0.5em;
+}
+
+.caller-balls > table > tbody td > .ball {
+  padding: 1em;
+  background: radial-gradient(
+    circle at 50% 40%,
+    #fcfcfc,
+    #dedede 66%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  color: #000;
+  font-weight: bold;
+}
+
+.caller-balls > table > tbody td > .ball.ball--drawn {
+  animation: ballDrawn 2s 1s reverse forwards;
+}
+
+.gameBoardHeader {
+  font-size: 2em;
+}
+
+.caller-balls > table {
+  border: 0.4em double #bdd4e6;
+}
+
+.caller-ball-instruction {
+  width: 50%;
+  margin: 1em auto;
+  text-align: center;
+}
